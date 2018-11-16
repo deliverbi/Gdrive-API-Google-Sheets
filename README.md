@@ -33,6 +33,16 @@ The parameter is the google sheet ID which is visible in most url's when viewing
 
 python3 gdrivedownloadsheets.py 1gWxy05uEcO8a8fNAfUSIdV1OcRWxH7RnjXezoHImJLE
 
+# Notes: Google Sheet ID
+
+https://developers.google.com/sheets/api/guides/concepts
+
+Spreadsheet ID
+Every API method requires a spreadsheetId parameter which is used to identify which spreadsheet is to be accessed or altered. This ID is the value between the "/d/" and the "/edit" in the URL of your spreadsheet. For example, consider the following URL that references a Google Sheets spreadsheet:
+
+https://docs.google.com/spreadsheets/d/1qpyC0XzvTcKT6EISywvqESX3A0MwQoFDE8p-Bll4hps/edit#gid=0
+The ID of this spreadsheet is 1qpyC0XzvTcKT6EISywvqESX3A0MwQoFDE8p-Bll4hps.
+
 
 Enjoy 
 
