@@ -9,6 +9,11 @@ Service Key and a Google Sheet ID.
 Service Keys can be generated for a project within google. Then the email address of the service key needs to be used for sharing of
 the spreadsheet within google sheets
 
+For : gdrivedownloadsheetsLoop.py
+
+Requires only service key.json file name, The google sheet names are derived from a.txt file you place in the same directory
+
+
 # Setup
 
 Make sure your python library for google api is this version ( can be higher but not tested on higher versions)
@@ -27,11 +32,18 @@ service_account_file = os.path.join(os.getcwd(), 'YOURSERVICEKEY.json')
 This will be your output Path for your csv files (1 per worksheet within a workbook)
 path = "/GCSDrive/output/"
 
-# Run Command
+For : gdrivedownloadsheetsLoop.py
+Requires only service key.json file name, The google sheet names are derived from a.txt file you place in the same directory
+
+# Run Commands
 
 The parameter is the google sheet ID which is visible in most url's when viewing the sheet in google.
 
+--------------- For running 1 workbook at a time
 python3 gdrivedownloadsheets.py 1gWxy05uEcO8a8fNAfUSIdV1OcRWxH7RnjXezoHImJLE
+
+--------------- For running Multiple Workbooks one after another
+python3 gdrivedownloadsheetsLoop.py 
 
 # Notes: Google Sheet ID
 
