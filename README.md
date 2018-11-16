@@ -2,6 +2,7 @@
 Google Python Scripts I Drive Extract Google Sheet with Service Key json
 
 The python script can be used to extract google sheets as csv . The script will extract all worksheets within a Google Sheets workbook.
+Tested on Linux Google DataProc and Linux machines in general.
 
 # Mandatory Parameters
 Service Key and a Google Sheet ID.
