@@ -8,8 +8,6 @@ import sys
 
 from apiclient.discovery import build  # pip install google-api-python-client==1.6.2
 
-#Sample SHEET = '1gWxy05uEcO8a8fNAfUSIdV1OcRWxH7RnjXezoHImJLA'
-
 SHEET = sys.argv[1]
 scope = ['https://www.googleapis.com/auth/drive','https://www.googleapis.com/auth/drive.file','https://www.googleapis.com/auth/spreadsheets']
 service_account_file = os.path.join(os.getcwd(), 'SERVICEACCOUNTKEY.json')
